@@ -1,0 +1,19 @@
+ function dot_product(arr1,arr2):integer
+ var s,i: integer
+ BEGIN
+ for i from 0 to arr1.length step 1 do 
+ s=s+arr1[i]*arr2[i]
+ END_FOR
+ return s
+ END
+ Algorithm calcvect
+ var tab1,tab2: array of integer[10]
+ s,i: integer 
+BEGIN 
+ s=0
+ p:=dot_product(tab1,tab2)
+ IF(s==0)
+ write("tab1 et tab2 sont orthogonaux")
+ else
+ write("tab1 et tab2 ne sont pas orthogonaux")
+END

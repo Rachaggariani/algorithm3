@@ -1,0 +1,18 @@
+Procedure dot_product( v1,v2 : integer , VAR pv)
+ var i :integer
+ BEGIN
+ for i from 0 to v1.length step 1 do 
+ pv=pv+v1[i]*v2[i];
+ END_FOR
+ END 
+Algorithm vecteur
+ var t1,t2: array of integer;
+ s:integer
+ BEGIN 
+ dot_product=(t1,t2,s);
+ IF(s==0) THEN
+ write("t1 et t2 sont orthogonaux")
+ else
+ write("t1 et t2 ne sont pas orthogonaux")
+ END_IF
+ END
